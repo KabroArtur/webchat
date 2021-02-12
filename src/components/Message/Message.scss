@@ -1,0 +1,77 @@
+$bubble: #3674FF;
+$bubble_me: #fff;
+$black: #202020;
+
+.Message{
+  display: block;
+  display: flex;
+  margin: 20px;
+}
+.Message_avatar{
+  display: flex;
+  align-items: flex-end;
+  margin-right: 15px;
+  margin-bottom: 35px; 
+  bottom: 0;
+  img{
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+}
+.message__bubble{
+  max-width: 500px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  box-shadow: 0px 5px 5px rgba(54, 116, 255, 0.196733);
+  padding: 15px 20px 5px;
+  background-color: $bubble;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
+
+    p{
+      color: #fff;
+      font-size: 14px;
+    }
+}
+.message__date{
+  p{
+    color: $black;
+    mix-blend-mode: normal;
+    opacity: 0.4;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+  }
+}
+
+
+.Message--isme{
+  flex-direction: row-reverse;
+
+  .Message_avatar{
+    margin-left: 15px;
+  }
+  
+  .message__bubble{
+    max-width: 500px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.0220444);
+    border: 1px solid #ECECEC;
+    padding: 15px 20px 5px;
+    background-color: $bubble_me;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 0px;
+
+  
+      p{
+        color: $black;
+        font-size: 14px;
+      }
+  }
+}
